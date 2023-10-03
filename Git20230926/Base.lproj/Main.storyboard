@@ -58,12 +58,13 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Vzz-2i-xyl">
                                 <rect key="frame" x="5" y="203" width="383" height="565"/>
-                                <color key="backgroundColor" red="0.090196078430000007" green="0.41960784309999999" blue="0.52941176469999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.94901960780000005" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.18823529410000001" green="0.52156862749999999" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kc1-jA-JcI"/>
-                        <color key="backgroundColor" red="0.015686274509803921" green="0.21176470588235294" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.3921568627" green="0.80000000000000004" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.94901960780000005" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.18823529410000001" green="0.52156862749999999" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vzz-2i-xyl" firstAttribute="leading" secondItem="kc1-jA-JcI" secondAttribute="leading" constant="5" id="VRP-DE-4pg"/>
                             <constraint firstItem="Vzz-2i-xyl" firstAttribute="top" secondItem="kc1-jA-JcI" secondAttribute="top" constant="100" id="e3b-oQ-Xym"/>
