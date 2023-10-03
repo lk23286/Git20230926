@@ -72,6 +72,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="m61-qy-BZX"/>
+                    <connections>
+                        <outlet property="tableForCustomCell" destination="Vzz-2i-xyl" id="z99-4i-64v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jsX-O2-555" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

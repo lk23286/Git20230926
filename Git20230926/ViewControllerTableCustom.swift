@@ -7,10 +7,21 @@
 
 import UIKit
 
-class ViewControllerTableCustom: UIViewController {
+class ViewControllerTableCustom: UIViewController, UITableViewDelegate {
 
+    @IBOutlet weak var tableForCustomCell: UITableView!
+    
+    var customTableArray = ["elso", "masodik", "harmadik"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableForCustomCell.delegate = self
+        tableForCustomCell.dataSource = self
+        
+        let nib = UINib(nibName: "TableViewCellCustom", bundle: nil)
+        
+        tableForCustomCell.register(nib, forCellReuseIdentifier: "Cell")
 
         // Do any additional setup after loading the view.
     }
@@ -27,3 +38,22 @@ class ViewControllerTableCustom: UIViewController {
     */
 
 }
+
+extension ViewControllerTableCustom: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        customTableArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCellCustom
+        
+        cell.customTextField.text = customTableArray[indexPath.row]
+        
+        return cell
+        
+        
+    }
+    
+    
+}
+
